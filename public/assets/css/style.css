@@ -1,0 +1,45 @@
+:root {
+    --spacing-sm: 4px;
+    --spacing: 8px;
+    --spacing2: 16px;
+
+    --light: #f0f0f0;
+    --primary: #0060ef;
+    font-size:1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    margin-block-start: var(--spacing2);
+    margin-block-end: var(--spacing-sm);
+}
+
+input {
+    font-size: 1rem;
+    padding-block: var(--spacing);
+    padding-inline: var(--spacing2);
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: var(--spacing);
+    border-width: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: fit-content;
+    margin-block-start: var(--spacing2);
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    filter: brightness(80%);
+}
