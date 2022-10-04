@@ -26,6 +26,12 @@ input {
     padding-inline: var(--spacing2);
 }
 
+select {
+    padding-block: var(--spacing);
+    padding-inline: var(--spacing2);
+    font-size: 1rem;
+}
+
 button {
     background-color: var(--primary);
     color: var(--light);
@@ -42,4 +48,10 @@ button:hover {
 }
 button:active {
     filter: brightness(80%);
+}
+
+.error {
+    background-color: rgb(239, 206, 206);
+    color: red;
+    padding: var(--spacing2);
 }
